@@ -189,7 +189,7 @@ public class SystemResourceImpl implements ISystemResource {
                     @Override
                     public void warn(String message) {
                         writer.println("WARN: " + message); //$NON-NLS-1$
-                        writer.flush();
+                        //writer.flush();
                     }
 
                     @Override
@@ -200,7 +200,7 @@ public class SystemResourceImpl implements ISystemResource {
                     @Override
                     public void trace(String message) {
                         writer.println("TRACE: " + message); //$NON-NLS-1$
-                        writer.flush();
+                        //writer.flush();
                     }
 
                     @Override
@@ -211,7 +211,7 @@ public class SystemResourceImpl implements ISystemResource {
                     @Override
                     public void info(String message) {
                         writer.println("INFO: " + message); //$NON-NLS-1$
-                        writer.flush();
+                        //writer.flush();
                     }
 
                     @Override
@@ -223,14 +223,14 @@ public class SystemResourceImpl implements ISystemResource {
                     public void error(String message, Throwable error) {
                         writer.println("ERROR: " + message); //$NON-NLS-1$
                         error.printStackTrace(writer);
-                        writer.flush();
+                        //writer.flush();
                     }
 
                     @Override
                     public void error(Throwable error) {
                         writer.println("ERROR: " + error.getMessage()); //$NON-NLS-1$
                         error.printStackTrace(writer);
-                        writer.flush();
+                        //writer.flush();
                     }
 
                     @Override
@@ -241,7 +241,7 @@ public class SystemResourceImpl implements ISystemResource {
                     @Override
                     public void debug(String message) {
                         writer.println("DEBUG: " + message); //$NON-NLS-1$
-                        writer.flush();
+                        //writer.flush();
                     }
 
                     @Override
